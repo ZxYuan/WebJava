@@ -25,7 +25,6 @@ public class Request {
 
         StringTokenizer stringTokenizer = new StringTokenizer(receive, "\n");
         String[] receiveArray = new String[stringTokenizer.countTokens()];
-        HashMap<String, String> hashMap = new HashMap<String, String>();
         this.Header = new HashMap();
         this.Arguments = new HashMap();
         this.Cookies = new HashMap();

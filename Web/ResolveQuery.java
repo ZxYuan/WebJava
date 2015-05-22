@@ -24,7 +24,7 @@ public class ResolveQuery {
         for (int i = 0; i < split.length; i++) {
             String string = split[i];
             String[] kvsplit = string.split("=",2);
-            hashMap.put(java.net.URLDecoder.decode(kvsplit[0]), java.net.URLDecoder.decode(kvsplit[1]));
+            hashMap.put(java.net.URLDecoder.decode(kvsplit[0], "UTF-8"), java.net.URLDecoder.decode(kvsplit[1], "UTF-8"));
         }
         return hashMap;
     }
